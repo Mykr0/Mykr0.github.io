@@ -70,7 +70,46 @@ header{
 }
 
 .section1 .contenedor-textos-main{
-    width: 40%;
+    width: 45%;
+}
+
+.info-last{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-last img{
+    width: 45%;
+}
+
+.info-last .contenedor-section-last{
+    width: 45%;
+}
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.info{
+    background: #0000;
+    color: white;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+/*Estilos Cards*/
+.content-cards{
+    display:flex;
+    
 }
 
 /*Estilos footer*/
