@@ -88,6 +88,33 @@ header{
     width: 45%;
 }
 
+.Jumbo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.Jumbo img{
+    width: 58%;
+    padding-top: 35px;
+}
+.Jumbo .contenedor-textos-main{
+    width: 40%;
+    padding-top: 200px;
+    padding-left: 10px;
+    justify-content: center;
+
+
+}
+
+.Jumbo{
+    background: #0000;
+    color: white;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+
 .parrafo{
     text-align: justify;
     margin-bottom: 20px;
@@ -102,11 +129,6 @@ header{
     color: white;
 }
 
-.info{
-    background: #0000;
-    color: white;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
-}
 
 
 /*Estilos Cards*/
@@ -119,7 +141,7 @@ header{
 .card{
     width: 32%;
     text-align: center;
-    height: 350px;
+    height: 380px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
     transform: scale(1);
     transition: transform 0.6s;
@@ -174,6 +196,54 @@ footer{
     color: white;
 }
 
+/*Estilos Form*/
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.Input{
+    background: transparent;
+    border: 0;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    padding: 20px 10px;
+
+}
+
+.Input::placeholder{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+Input[type="text"],
+Input[type="email"]{
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+Input[type="submit"]{
+    width: 115px;
+    text-align: center;
+    padding: 14px 0;
+}
+
+Input[type="submit"]:hover{
+    cursor: pointer;
+    color: black;
+    background: gray;
+}
+
+
 /*Estilos Contenedores*/
 .contenedor,.wave-contenedor{
     width: 90%;
@@ -201,3 +271,89 @@ footer{
     text-align: right;
 }
 
+@media screen and (max-width:800px) {
+    .textos-header h1{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .titulo{
+        font-size: 35px;
+    }
+
+    .titulo.left{
+        text-align: center;
+    }
+
+    .titulo.right{
+        text-align: center;
+    }
+    .Jumbo p{
+        text-align: center;
+    }
+
+    /* Section */
+
+    .section1{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section1 img{
+        width: 100%;
+    }
+
+    .section1 .contenedor-textos-main{
+        width: 100%;
+    }
+
+    .section-last img{
+        width: 60%;
+    }
+
+    .section-last .contenedor-textos-main{
+        width: 60%;
+        margin-bottom: 15px;
+    }
+
+    /* Cards */
+
+    .card{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Galeria */
+
+    .galeria-contenedor img{
+        width: 48%;
+    }
+
+
+    @media screen and (max-width:400px) {
+        .titulo,.textos-header h1{
+            font-size: 30px;
+        }
+        
+        .textos-header p{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .section1 .contenedor-textos-main{
+            margin-bottom: 30px;
+        }
+
+        .galeria-contenedor img{
+            width: 96%;
+        }
+
+        .card{
+            height: 400px;
+        }
+
+
+    }
+    
+}
