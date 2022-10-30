@@ -12,6 +12,8 @@ body{
     font-family: 'Roboto Mono', monospace;
 }
 
+/* Estilos Header*/
+
 header{
     background-image: linear-gradient(to right, rgba(79, 172, 254, 0.705) 0%, rgba(0, 241, 254, 0.705) 100%),url('../Images/3\ en\ 1.jpg');
     width: 100%;
@@ -25,7 +27,7 @@ header{
 }
 
 .textos-header{
-    height: 500px;
+    height: 600px;
     color: black;
     display: flex;
     flex-direction: column;
@@ -49,5 +51,153 @@ header{
     padding: 13px 16px;
     background: rgb(12, 12, 12);
     border-radius: 8px;
+}
+
+.svg-header{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/*Estilos body*/
+.section1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 img{
+    width: 45%;
+}
+
+.section1 .contenedor-textos-main{
+    width: 45%;
+}
+
+.section-last{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.section-last img{
+    width: 45%;
+}
+
+.section-last .contenedor-textos-main{
+    width: 45%;
+}
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.info{
+    background: #0000;
+    color: white;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+
+/*Estilos Cards*/
+.content-cards{
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    width: 32%;
+    text-align: center;
+    height: 350px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+.card:hover{
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card i{
+    margin: 25px 0 15px 0;
+    color: black;
+    font-size: 45px;
+}
+
+.card p{
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/*Estilos Galeria*/
+.galeria{
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+
+.galeria-contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.galeria-contenedor img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+/*Estilos footer*/
+
+footer{
+    background: black;
+    color: white;
+}
+
+/*Estilos Contenedores*/
+.contenedor,.wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+
+.contenedor{
+    padding: 80px 0;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo.left{
+    text-align: left;
+}
+.titulo.right{
+    text-align: right;
 }
 
